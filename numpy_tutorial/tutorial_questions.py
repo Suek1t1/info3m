@@ -35,6 +35,6 @@ cols34 = c[:, 2:4]
 print("\n(8)の答え:\n", cols34)
 
 # (9) 5行2列の行列を用意し、(6)の行列との積を求める
-m2 = np.random.rand(5, 2)
-matrix_prod = np.dot(c, m2)
+c2 = np.random.rand(5, 2)
+matrix_prod = np.dot(c, c2)
 print("\n(9)の答え:\n", matrix_prod)
