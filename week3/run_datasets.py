@@ -1,5 +1,5 @@
 # testing
-import datasets
+import week3.datasets as datasets
 X, Y = datasets.load_linear_example()
 print(X)
 print(X[0])
