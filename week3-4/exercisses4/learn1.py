@@ -2,6 +2,8 @@
 
 import dataset1
 from sklearn import linear_model
+import matplotlib.pyplot as plt
+import numpy as np 
 
 
 def main():
@@ -34,4 +36,12 @@ def main():
     print('テストデータの観測値:\n', y_test.values)
     print('テストデータの予測値:\n', y_pred)
 
+    # --- 演習1.11: モデルの可視化 ---
+    plt.scatter(x_train, y_train, color='blue', label='訓練データ')
+    plt.plot(x_train, model.predict(x_train), color='red', label='回帰直線')
+    plt.xlabel('観測点')
+    plt.ylabel('観測値')
+    plt.legend()
+    plt.show()
+    plt.savefig('week3-4/exercises4/ex1.10.png')
 main()
