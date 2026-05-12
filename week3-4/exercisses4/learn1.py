@@ -29,4 +29,9 @@ def main():
     print('回帰係数:', model.coef_)
     print('切片:', model.intercept_)
 
+    # --- 演習1.10: テスト用データセットに対する予測 ---
+    y_pred = model.predict(x_test)
+    print('テストデータの観測値:\n', y_test.values)
+    print('テストデータの予測値:\n', y_pred)
+
 main()
