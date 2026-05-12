@@ -1,6 +1,6 @@
 import importlib
-import week3.datasets as datasets
-import week3.regression as regression
+import datasets as datasets
+import regression as regression
 
 importlib.reload(regression)
 
